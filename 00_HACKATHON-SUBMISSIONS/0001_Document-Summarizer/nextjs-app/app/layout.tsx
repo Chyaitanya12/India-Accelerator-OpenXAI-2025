@@ -6,7 +6,6 @@ export const metadata = {
   description: 'Summarize your documents using AI powered by Ollama',
   keywords: ['document summarization', 'AI', 'Ollama', 'Next.js', 'OpenxAI'],
   authors: [{ name: 'Your Name or Team Name' }],
-  viewport: 'width=device-width, initial-scale=1',
   icons: {
     icon: '/favicon.ico',
   },
@@ -26,6 +25,11 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
