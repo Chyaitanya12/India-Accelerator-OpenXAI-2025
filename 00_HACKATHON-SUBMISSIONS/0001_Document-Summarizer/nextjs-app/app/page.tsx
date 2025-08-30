@@ -18,6 +18,7 @@ export default function HomePage() {
   const handleSummarize = async () => {
     if (!text.trim()) {
       setError("Please enter some text to summarize");
+      setSummary("");
       return;
     }
 
@@ -64,7 +65,7 @@ export default function HomePage() {
     <>
       <header className="header">
         <h1 className="title">📄 Document Summarizer</h1>
-        <p className="description">
+        <p className="description" style={{ color: '#1e40af' }}>
           AI-powered document summarization using Ollama. Paste your text and get instant, intelligent summaries. No minimum character limit.
         </p>
       </header>
@@ -149,8 +150,8 @@ export default function HomePage() {
         )}
       </main>
 
-      <footer className="footer">
-        <p>© 2024 Document Summarizer. All rights reserved.</p>
+      <footer className="footer" style={{ textAlign: 'center' }}>
+        <p>© 2025 Document Summarizer. All rights reserved.</p>
       </footer>
     </>
   );
